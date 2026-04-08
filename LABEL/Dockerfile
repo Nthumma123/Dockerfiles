@@ -1,9 +1,9 @@
 FROM almalinux:9
 RUN dnf install nginx -y 
 CMD ["nginx", "-g", "daemon off;"]
-LABEl course = "RoboShop DevOps" \
-      author="Neelima" \
-      email="neel@gmail.com"
+LABEL course = "RoboShop DevOps" \
+      author = "Neelima" \
+      email = "neel@gmail.com"
 
 
 
