@@ -1,10 +1,19 @@
 FROM almalinux:9
+ENTRYPOINT ["ping"]
+CMD ["google.com"]
 #CMD ["ping" , "google.com"]
 
-ENTRYPOINT ["ping" , "google.com"]
+#ENTRYPOINT ["ping" , "google.com"]
+
+#we can use both CMD and entrypoint for best results
 
 
 
+#docker run entry:1.4.0 ping facebook.com
+#ping: ping: Name or service not known
+
+
+#We cant override the entrypoint, if we try to do so it will go and append.
 
 
 
